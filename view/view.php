@@ -15,16 +15,45 @@ abstract class View{
      *
      * @return object
      */
-    public function loadModel($name, $path='') {
- 
+    public function loadModel($name, $path='model/') {
+        $path = $path.$name.'.php';
+        $name = $name.'Model';
+        try {
+            if(is_file($path)) {
+                require $path;
+                $ob = new $name();
+            } else {
+                throw new Exception('Can not open model '.$name.' in: '.$path);
+            }
+        } catch (Exception $ex) {
+            echo $ex->getMessage().'<br/>
+                File: '.$ex->getFile().'<br/>
+                Code line: '.$ex->getLine().'<br/>
+                Trace: '.$ex->getTraceAsString();
+            exit;
+        }
+        return $ob;
     }
     /**
      * It includes template file.
      *
      * @return void
      */
-    public function render() {
- 
+    public function render($name, $path='templates/') {
+        $path = $path.$name.'html.php';
+        try {
+            if(is_file($path)) {
+                require '$path';
+            } else {
+                throw new Exception('Can not open template '.$name.' in: '.$path);
+            }
+        } catch (Exception $ex) {
+            echo $ex->getMessage().'<br/>
+                File: '.$ex->getFile().'<br/>
+                Code line: '.$ex->getLine().'<br/>
+                Trace: '.$ex->getTraceAsString();
+            exit;
+        }
     }
     /**
      * It sets data.
@@ -35,7 +64,7 @@ abstract class View{
      * @return void
      */
     public function set($name, $value) {
- 
+        $this->$name = $value;
     }
     /**
      * It gets data.
@@ -45,7 +74,7 @@ abstract class View{
      * @return mixed
      */
     public function get($name) {
- 
+        return $this->$name;
     }
 }
 
