@@ -65,7 +65,7 @@ abstract class Model{
      * @return array
      */
     public function select($from, $select='*', $where=NULL, $order=NULL, $limit=NULL) {
-        $query = 'SELECT '.$select.' FROM '.$form;
+        $query = 'SELECT '.$select.' FROM '.$from;
         if($where != NULL)
             $query.= ' WHERE '.$where;
         if($order !=NULL)

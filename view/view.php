@@ -40,10 +40,10 @@ abstract class View{
      * @return void
      */
     public function render($name, $path='templates/') {
-        $path = $path.$name.'html.php';
+        $path = $path.$name.'.php';
         try {
             if(is_file($path)) {
-                require '$path';
+                require $path;
             } else {
                 throw new Exception('Can not open template '.$name.' in: '.$path);
             }
@@ -77,4 +77,3 @@ abstract class View{
         return $this->$name;
     }
 }
-

@@ -2,6 +2,6 @@
 
 $host = 'localhost';
 $db_name = 'mvc_ex';
-$user_name = '';
-$pass = '';
+$user_name = 'root';
+$pass = 'coderslab';
 
