@@ -2,7 +2,7 @@
 
 include 'controller/controller.php';
 
-class ArticleController extends Controller {
+class ArticlesController extends Controller {
     public function index() {
         $view = $this->loadView('articles');
         $view->index();

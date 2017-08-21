@@ -20,7 +20,7 @@ include 'templates/header.php';
             <td>".$articles['date_add']."</td>
             <td>".$articles['author']."</td>
             <td>".$articles['name']."</td>
-            <td><a> href=\"?task=articles&action=delete&id=".$articles['id']."\">Delete</a></td>
+            <td><a href=\"?task=articles&action=delete&id=".$articles['id']."\">Delete</a></td>
             </tr>";
     }
     ?>

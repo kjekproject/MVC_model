@@ -78,7 +78,6 @@ abstract class Model{
             $data[] = $row;
         }
         $select->closeCursor();
-        
         return $data;
     }
 }

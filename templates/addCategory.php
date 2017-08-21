@@ -13,5 +13,5 @@ include 'templates/header.php';
 
 <?php 
 
-include 'templates/footer.html.php'; 
+include 'templates/footer.php'; 
 ?>

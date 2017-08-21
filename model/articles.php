@@ -2,7 +2,7 @@
 
 include 'model/model.php';
 
-class ArticleModel extends Model {
+class ArticlesModel extends Model {
     public function getAll() {
         $query = "SELECT a.id, a.title, a.date_add, a.author, c.name
                 FROM articles AS a 

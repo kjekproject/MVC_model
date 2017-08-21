@@ -5,7 +5,7 @@ include 'view/view.php';
 class ArticlesView extends View {
     public function index() {
         $art = $this->loadModel('articles');
-        $art->set('articles', $art->getAll());
+        $this->set('articles', $art->getAll());
         $this->render('indexArticle');
     }
     

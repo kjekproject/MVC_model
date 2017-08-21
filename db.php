@@ -12,7 +12,7 @@ $db = array(
 ,
     "CREATE TABLE articles(
         id int AUTO_INCREMENT NOT NULL,
-        titel varchar(100) NOT NULL,
+        title varchar(100) NOT NULL,
         content text,
         date_add datetime,
         author varchar(100),
