@@ -50,4 +50,4 @@ class ArticlesModel extends Model {
         $del->bindValue(':id', $id, PDO::PARAM_INT);
         $del->execute();
     }
-}
+} 

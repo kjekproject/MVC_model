@@ -9,7 +9,8 @@ if(isset($_GET['task'])) {
     } elseif($_GET['task'] == 'articles') {
         include 'controller/articles.php';
         $ob = new ArticlesController();
-        $ob->$_GET['action']();
+        $action = $_GET['action'];
+        $ob->$action();
     }
 } else {
     include 'controller/articles.php';

@@ -5,7 +5,7 @@ $db = array(
         DEFAULT CHARACTER SET utf8
         DEFAULT COLLATE utf8_general_ci"
 ,
-    "CREATE TABLE categories{
+    "CREATE TABLE categories(
         id int AUTO_INCREMENT NOT NULL,
         name varchar(100) NOT NULL,
         PRIMARY KEY(id))"

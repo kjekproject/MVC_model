@@ -12,7 +12,7 @@ include 'templates/header.php';
     Content:<br />
     <textarea name="content"></textarea><br />
     Category:
-    <select name="cat" size="0">
+    <select name="id_categories" size="0">
         <?php
         foreach($this->get('catsData') as $cats) {
             echo "<option value=\"".$cats['id']."\">".$cats['name']."</option>";
@@ -24,5 +24,5 @@ include 'templates/header.php';
 
 <?php 
 
-include 'templates/footer.html.php'; 
+include 'templates/footer.php'; 
 ?>

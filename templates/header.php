@@ -11,6 +11,6 @@
         <ul>
             <li><a href="?task=categories&action=add">Add category</a></li>
             <li><a href="?task=categories&action=index">Category list</a></li>
-            <li><a href="?task=article&action=add">Add article</a></li>
-            <li><a href="?task=article&action=index">Article list</a></li>
+            <li><a href="?task=articles&action=add">Add article</a></li>
+            <li><a href="?task=articles&action=index">Article list</a></li>
         </ul>
