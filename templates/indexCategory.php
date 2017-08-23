@@ -12,8 +12,8 @@ include 'templates/header.php';
         </tr>
         <?php foreach($this->get('catsData') as $cats) { ?>
         <tr>
-            <td><?php $cats['name']; ?></td>
-            <td><a href="?task=categories&action=delete&id=<?php $cats['id']; ?>">Delete</a></td>
+            <td><?php echo $cats['name']; ?></td>
+            <td><a href="?task=categories&action=delete&id=<?php echo $cats['id']; ?>">Delete</a></td>
         </tr>
         <?php } ?>
     </table>

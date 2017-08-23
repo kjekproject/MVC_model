@@ -22,7 +22,7 @@ class CategoriesController extends Controller {
     public function delete() {
         $model = $this->loadModel('categories');
         $model->delete($_GET['id']);
-        $this->redirect('?task=cetegories&action=index');
+        $this->redirect('?task=categories&action=index');
     }
 }
 

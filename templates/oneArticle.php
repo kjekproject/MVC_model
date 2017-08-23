@@ -10,5 +10,5 @@ foreach($this->get('articles') as $articles) {
         Content:".$articles['content'];
 }
 
-include 'templates/footer.html.php'; 
+include 'templates/footer.php'; 
 ?>

@@ -8,7 +8,7 @@ include 'templates/header.php';
 <form action="?task=articles&action=insert" method="post"> 
     Title: <input type="text" name="title" /><br />
     Author: <input type="text" name="author" /><br />
-    Add date: <input type="text" name="date_add" value="<?php date("Y:m:d"); ?>"/><br />
+    Add date: <input type="text" name="date_add" value="<?php echo date('Y-m-d'); ?>"/><br />
     Content:<br />
     <textarea name="content"></textarea><br />
     Category:
